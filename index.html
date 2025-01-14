@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+  <link rel = "stylesheet" href="STYLE.css">
+  
+</head>
+<body>
+  <h1 id="cricket">BAT-BALL-STUMP GAME </h1>
+  <h1 id="HEADING">USER VS COMPUTER</h1>
+ 
+  <p id="paragraph">
+    
+  </p>
+  <p id="paragraphs">
+    
+  </p>
+  
+<button class="button" onclick="
+
+let computerchoice; 
+
+let randomNumber= Math.random() * 3;
+if(randomNumber>0 &&     randomNumber<=1){
+     computerchoice='bat'}
+else if (randomNumber>1 &&     randomNumber<=2){
+     computerchoice='ball'}
+else{
+       computerchoice='stump'}
+
+let resultmsg;
+if(computerchoice==='bat'){
+
+
+ resultmsg=`it's a tie`;
+
+}
+else if(computerchoice==='ball'){
+  
+ resultmsg=`you has won`;
+
+}
+else{  
+ resultmsg=`you has lost`;
+
+}
+document.querySelector('#paragraph').innerText= `you have choosed bat,computer choosed ${computerchoice} ${resultmsg}` ;
+
+  ">
+   BAT
+  </button>
+</br>
+<button class="button" onclick="
+let computerchoice;
+let randomNumber= Math.random() * 3;
+
+if(randomNumber>0 &&     randomNumber<=1){
+     computerchoice='bat'}
+else if (randomNumber>1 &&     randomNumber<=2){
+     computerchoice='ball'}
+else{
+       computerchoice='stump'}
+
+if(computerchoice==='ball'){
+
+
+ resultmsg=`it's a tie`;
+
+}
+else if(computerchoice==='stump'){
+  
+ resultmsg=`you has won`;
+
+}
+else{  
+ resultmsg=`you has lost`;
+
+}
+document.querySelector('#paragraph').innerText= `you have choosed ball,computer choosed ${computerchoice} ${resultmsg}` ;
+
+  ">
+   BAll
+  </button>
+</br>
+<button class="button" onclick="
+
+let computerchoice;
+let randomNumber= Math.random() * 3;
+
+if(randomNumber>0 &&     randomNumber<=1){
+     computerchoice='bat'}
+else if (randomNumber>1 &&     randomNumber<=2){
+     computerchoice='ball'}
+else{
+       computerchoice='stump'}
+let resultmsg;
+if(computerchoice==='stump'){
+
+
+ resultmsg=`it's a tie`;
+
+}
+else if(computerchoice==='bat'){
+  
+ resultmsg=`you has won`;
+
+}
+else{  
+ resultmsg=`you has lost`;
+
+}
+
+document.querySelector('#paragraph').innerText= `you have choosed stump,computer choosed ${computerchoice} ${resultmsg}` ;
+
+  ">
+   stump
+  </button>
+</br>
+
+  
+
+  
+<button class="button" onclick="
+
+document.querySelector('#paragraph').innerText= ' ';
+
+">
+ reset
+</button>
+</br>
+<script src="cricket.js">
+
+  
+</script>
+</body>
+</html>

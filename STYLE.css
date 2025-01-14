@@ -1,0 +1,45 @@
+#cricket{
+  font-family: cursive;
+  flex-wrap: wrap;
+ color: rgb(125, 10, 234);
+}
+.button{
+  font-family:cursive;
+  font-size: xx-large;
+  margin:20px ;
+  padding:20px;
+  height: 50px;
+  width: 90px;
+  display:flex;
+  justify-content: center;
+  text-emphasis: none;
+  text-align: center;
+  border-radius:20% ;
+  border-color: rgb(113, 74, 220);
+  border-width: 5px;
+  align-content: center;
+  align-items: center;
+}
+body{
+  text-align: center;
+  background-image:url(logo.webp);
+  background-size: cover;
+  position: fixed;
+  text-decoration-color: blueviolet;
+  height: 50px;
+  align-content: center;
+  align-items: center;
+}
+#paragraph{
+  font-family: cursive;
+  font-size: xx-large;
+  color: blue;
+  border: #d20a0a;
+
+}
+#HEADING{
+  font-family: cursive;
+  text-decoration-color: blueviolet;
+ text-decoration: dashed;
+ color: #d20a0a;
+}
