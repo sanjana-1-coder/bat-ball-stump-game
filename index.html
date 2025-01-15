@@ -11,7 +11,7 @@
 <body>
   <h1 id="cricket">BAT-BALL-STUMP GAME </h1>
   <h1 id="HEADING">USER VS COMPUTER</h1>
- 
+  <h1 id="win"> </h1>
   <p id="paragraph">
     
   </p>
@@ -34,20 +34,21 @@ else{
 let resultmsg;
 if(computerchoice==='bat'){
 
-
+     score.tie++;
  resultmsg=`it's a tie`;
 
 }
 else if(computerchoice==='ball'){
-  
+     score.win++; 
  resultmsg=`you has won`;
 
 }
-else{  
+else{   score.lost++; 
  resultmsg=`you has lost`;
 
 }
 document.querySelector('#paragraph').innerText= `you have choosed bat,computer choosed ${computerchoice} ${resultmsg}` ;
+document.querySelector('#win').innerText= ` win: ${score.win},lost:${score.lost}, tie:${score.tie} `;
 
   ">
    BAT
@@ -66,20 +67,22 @@ else{
 
 if(computerchoice==='ball'){
 
-
+score.tie++;
  resultmsg=`it's a tie`;
 
 }
 else if(computerchoice==='stump'){
-  
+  score.win++;
  resultmsg=`you has won`;
 
 }
-else{  
+else{ 
+ score.lost++; 
  resultmsg=`you has lost`;
 
 }
 document.querySelector('#paragraph').innerText= `you have choosed ball,computer choosed ${computerchoice} ${resultmsg}` ;
+document.querySelector('#win').innerText= ` win: ${score.win},lost:${score.lost}, tie:${score.tie} `;
 
   ">
    BAll
@@ -99,21 +102,22 @@ else{
 let resultmsg;
 if(computerchoice==='stump'){
 
-
+     score.tie++;
  resultmsg=`it's a tie`;
 
 }
 else if(computerchoice==='bat'){
-  
+     score.win++;
  resultmsg=`you has won`;
 
 }
-else{  
+else{  score.lost++;  
  resultmsg=`you has lost`;
 
 }
 
 document.querySelector('#paragraph').innerText= `you have choosed stump,computer choosed ${computerchoice} ${resultmsg}` ;
+document.querySelector('#win').innerText= ` win: ${score.win},lost:${score.lost}, tie:${score.tie} `;
 
   ">
    stump
@@ -126,13 +130,18 @@ document.querySelector('#paragraph').innerText= `you have choosed stump,computer
 <button class="button" onclick="
 
 document.querySelector('#paragraph').innerText= ' ';
-
+document.querySelector('#win').innerText= ' ';
 ">
  reset
 </button>
 </br>
-<script src="cricket.js">
+<script>
+let score={
+     win:0,
+     lost:0,
+     tie:0,
 
+}
   
 </script>
 </body>
